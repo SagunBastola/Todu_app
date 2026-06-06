@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Bath",
+    "description": "thsi is first task",
+    "created_at": "2024-09-06T00:00:00Z",
+    "priority": "High",
+    "is_completed": true
+  },
+  {
+    "id": 2,
+    "name": "bath3",
+    "description": "new is there",
+    "created_at": "2024-09-06T00:00:00Z",
+    "priority": "Low",
+    "is_completed": true
+  },
+  {
+    "id": 3,
+    "name": "classwork",
+    "description": "This is the first task",
+    "created_at": "2024-09-06T00:00:00Z",
+    "priority": "High",
+    "is_completed": true
+  }
+]
