@@ -1,6 +1,15 @@
 from fastapi import FastAPI,Query,HTTPException,Path
 from service.task import get_tasks,search_similar_tasks,priority_listing,add_task,delete_task,change_task
+from fastapi.middleware.cors import CORSMiddleware
 app=FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # For local testing; narrow down in production
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 from schema.task import Task,TaskUpdate
 from datetime import datetime
 @app.get("/")
