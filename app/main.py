@@ -5,9 +5,9 @@ app=FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # For local testing; narrow down in production
+    allow_origins=["*"],  # Allows any frontend to access your API
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["*"],  # Allows GET, POST, PUT, DELETE
     allow_headers=["*"],
 )
 from schema.task import Task,TaskUpdate
